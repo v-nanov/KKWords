@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EA013B611E1EDE9800472454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA013B601E1EDE9800472454 /* AppDelegate.swift */; };
-		EA013B631E1EDE9800472454 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA013B621E1EDE9800472454 /* ViewController.swift */; };
 		EA013B661E1EDE9800472454 /* KKWords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA013B641E1EDE9800472454 /* KKWords.xcdatamodeld */; };
 		EA013B681E1EDE9800472454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA013B671E1EDE9800472454 /* Assets.xcassets */; };
 		EA013B6B1E1EDE9800472454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA013B691E1EDE9800472454 /* Main.storyboard */; };
@@ -20,6 +19,9 @@
 		EA30D8C01E22FE700003B705 /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30D8BF1E22FE700003B705 /* PreferenceView.swift */; };
 		EA3C6C711E20469500838950 /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6C701E20469500838950 /* AppMenu.swift */; };
 		EA439DF21E217B3300FF6EA3 /* SwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA439DF11E217B3300FF6EA3 /* SwiftTimer.swift */; };
+		EA6C31931E24264E00F88AC2 /* DispatchQueueAdaption.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C31921E24264E00F88AC2 /* DispatchQueueAdaption.m */; };
+		EA6C31961E242A5700F88AC2 /* DispatchQueue+Adaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C31951E242A5700F88AC2 /* DispatchQueue+Adaption.swift */; };
+		EA6C31981E242F6B00F88AC2 /* RegroupAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C31971E242F6B00F88AC2 /* RegroupAlertView.swift */; };
 		EA8218081E1EE21A0026127D /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8218071E1EE21A0026127D /* WindowController.swift */; };
 		EA82180E1E1EEF990026127D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82180D1E1EEF990026127D /* QuizViewController.swift */; };
 		EA8218211E1F6CDD0026127D /* KKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8218201E1F6CDD0026127D /* KKUtils.swift */; };
@@ -68,7 +70,6 @@
 /* Begin PBXFileReference section */
 		EA013B5D1E1EDE9800472454 /* KKWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA013B601E1EDE9800472454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA013B621E1EDE9800472454 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA013B651E1EDE9800472454 /* KKWords.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KKWords.xcdatamodel; sourceTree = "<group>"; };
 		EA013B671E1EDE9800472454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA013B6A1E1EDE9800472454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +87,10 @@
 		EA30D8BF1E22FE700003B705 /* PreferenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
 		EA3C6C701E20469500838950 /* AppMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
 		EA439DF11E217B3300FF6EA3 /* SwiftTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTimer.swift; sourceTree = "<group>"; };
+		EA6C31921E24264E00F88AC2 /* DispatchQueueAdaption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueAdaption.m; sourceTree = "<group>"; };
+		EA6C31941E24285000F88AC2 /* DispatchQueueAdaption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DispatchQueueAdaption.h; path = ../DispatchQueueAdaption.h; sourceTree = "<group>"; };
+		EA6C31951E242A5700F88AC2 /* DispatchQueue+Adaption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Adaption.swift"; sourceTree = "<group>"; };
+		EA6C31971E242F6B00F88AC2 /* RegroupAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegroupAlertView.swift; sourceTree = "<group>"; };
 		EA8218071E1EE21A0026127D /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		EA82180D1E1EEF990026127D /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		EA8218201E1F6CDD0026127D /* KKUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKUtils.swift; sourceTree = "<group>"; };
@@ -155,7 +160,6 @@
 				EA8218171E1EF9F20026127D /* Entities */,
 				EAE8BD801E21A817004D93C3 /* KKWords-Bridging-Header.h */,
 				EA013B601E1EDE9800472454 /* AppDelegate.swift */,
-				EA013B621E1EDE9800472454 /* ViewController.swift */,
 				EA013B671E1EDE9800472454 /* Assets.xcassets */,
 				EA013B691E1EDE9800472454 /* Main.storyboard */,
 				EA013B6C1E1EDE9800472454 /* Info.plist */,
@@ -169,6 +173,10 @@
 				EA439DF11E217B3300FF6EA3 /* SwiftTimer.swift */,
 				EA30D8B51E22A1480003B705 /* KKWordFile.swift */,
 				EA30D8BF1E22FE700003B705 /* PreferenceView.swift */,
+				EA6C31941E24285000F88AC2 /* DispatchQueueAdaption.h */,
+				EA6C31921E24264E00F88AC2 /* DispatchQueueAdaption.m */,
+				EA6C31951E242A5700F88AC2 /* DispatchQueue+Adaption.swift */,
+				EA6C31971E242F6B00F88AC2 /* RegroupAlertView.swift */,
 			);
 			path = KKWords;
 			sourceTree = "<group>";
@@ -362,11 +370,13 @@
 			files = (
 				EABCD0481E215FED00330648 /* WarningBadge.swift in Sources */,
 				EABCD0421E20776200330648 /* WordInfo+CoreDataProperties.swift in Sources */,
-				EA013B631E1EDE9800472454 /* ViewController.swift in Sources */,
 				EA82180E1E1EEF990026127D /* QuizViewController.swift in Sources */,
+				EA6C31931E24264E00F88AC2 /* DispatchQueueAdaption.m in Sources */,
+				EA6C31961E242A5700F88AC2 /* DispatchQueue+Adaption.swift in Sources */,
 				EA30D8C01E22FE700003B705 /* PreferenceView.swift in Sources */,
 				EA8218081E1EE21A0026127D /* WindowController.swift in Sources */,
 				EA439DF21E217B3300FF6EA3 /* SwiftTimer.swift in Sources */,
+				EA6C31981E242F6B00F88AC2 /* RegroupAlertView.swift in Sources */,
 				EABCD0411E20776200330648 /* WordInfo+CoreDataClass.swift in Sources */,
 				EABCD0431E20776200330648 /* WordList+CoreDataClass.swift in Sources */,
 				EA8218211E1F6CDD0026127D /* KKUtils.swift in Sources */,
@@ -533,7 +543,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/KKWords",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.idickyt.KKWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KKWords/KKWords-Bridging-Header.h";
@@ -561,7 +571,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/KKWords",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.idickyt.KKWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KKWords/KKWords-Bridging-Header.h";

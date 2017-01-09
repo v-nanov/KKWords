@@ -36,7 +36,7 @@ class AppMenu: NSMenu {
     }
     
     @IBAction func gotoGithub(sender: AnyObject!) {
-        let url = URL(string:"http://example.com")!
+        let url = URL(string:"https://github.com/DickyT/KKWords")!
         NSWorkspace.shared().open(url)
     }
 }

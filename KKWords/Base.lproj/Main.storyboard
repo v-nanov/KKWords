@@ -68,7 +68,7 @@
         <!--Window Controller-->
         <scene sceneID="7Of-UW-Jrt">
             <objects>
-                <windowController storyboardIdentifier="preferencewindow" id="eC4-nV-WFe" customClass="WindowController" customModule="KKWords" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController id="eC4-nV-WFe" customClass="WindowController" customModule="KKWords" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="ZGe-dY-6Is">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="722" y="433" width="480" height="270"/>

@@ -47,13 +47,14 @@ class QuizViewController: NSViewController {
     var quizStarted = false
     var countDownTimer: SwiftTimer!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         self.reloadData()
         
         NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: Notification.Name("word_list_changed"), object: nil)
     }
-    
+
     func reloadData() {
         // refresh word list
         self.loadWordList()
@@ -300,39 +301,38 @@ class QuizViewController: NSViewController {
         else {
             sender.selectItem(at: self.wordGroupCurrentIndex)
             
-            // set group limit
-            let groupLimit = self.getString(title: "Re-Group Words", question: "How many words do you want in each group?", defaultValue: "")
-            if let groupLimitNum = Int(groupLimit) {
-                self.allWordList[self.wordListCurrentIndex].groupLimit = Int64(groupLimitNum)
-                DispatchQueue.global().async {
-                    do {
-                        try self.context.save()
-                    } catch let error {
-                        self.showAlert(title: "Warning", text: "Word list save fail, error: \(error.localizedDescription)")
+            // split word list
+            self.alertWordListSplit(title: "Re-Group Words", question: "How many words do you want in each group?", defaultValue: "", completionHandler: { (groupLimit) in
+                if let groupLimitNum = Int(groupLimit) {
+                    self.allWordList[self.wordListCurrentIndex].groupLimit = Int64(groupLimitNum)
+                    
+                    DispatchQueue.global {
+                        do {
+                            try self.context.save()
+                        } catch let error {
+                            DispatchQueue.main.async {
+                                self.showAlert(title: "Warning", text: "Word list save fail, error: \(error.localizedDescription)")
+                            }
+                        }
+                        self.chapterGroupLimit = groupLimitNum
+                        self.loadWordGroup()
                     }
-                    NotificationCenter.default.post(name: Notification.Name("word_list_changed"), object: nil)
                 }
-            }
+            })
         }
     }
     
-    func getString(title: String, question: String, defaultValue: String) -> String {
-        let msg = NSAlert()
-        msg.addButton(withTitle: "OK")      // 1st button
-        msg.addButton(withTitle: "Cancel")  // 2nd button
-        msg.messageText = title
-        msg.informativeText = question
-        
-        let txt = NSTextField(frame: NSRect(x: 0, y: 0, width: 200, height: 24))
-        txt.stringValue = defaultValue
-        
-        msg.accessoryView = txt
-        let response: NSModalResponse = msg.runModal()
-        
-        if (response == NSAlertFirstButtonReturn) {
-            return txt.stringValue
-        } else {
-            return ""
+    func alertWordListSplit(title: String, question: String, defaultValue: String, completionHandler: @escaping (String) -> ()) {
+        let regroupAlert = RegroupAlertView()
+        regroupAlert.messageText = title
+        regroupAlert.informativeText = question
+
+        regroupAlert.beginSheetModal(for: self.view.window!) { (modalResponse) in
+            if (modalResponse == NSAlertFirstButtonReturn) {
+                completionHandler((regroupAlert.accessoryView as! NSTextField).stringValue)
+            } else {
+                completionHandler("")
+            }
         }
     }
     

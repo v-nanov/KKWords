@@ -1,13 +1,16 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "951BE18F3C763948F37B2A33852B39D249865A41",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "951BE18F3C763948F37B2A33852B39D249865A41" : 9223372036854775807,
     "BA067883C0B4B4F6C14D92BEB8F9880B814A8461" : 9223372036854775807,
     "CBD915DA2979D1835E88297992E137B9AFD28351" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "174A8728-C385-4B94-8CD6-30470D47C543",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "951BE18F3C763948F37B2A33852B39D249865A41" : "KKWords\/",
     "BA067883C0B4B4F6C14D92BEB8F9880B814A8461" : "KKWords\/DHlibxls\/",
     "CBD915DA2979D1835E88297992E137B9AFD28351" : "KKWords\/DHlibxls\/libxls\/"
   },
@@ -15,6 +18,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KKWords.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:DickyT\/KKWords.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "951BE18F3C763948F37B2A33852B39D249865A41"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dhoerl\/DHlibxls.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
