@@ -14,6 +14,24 @@
 		EA013B6B1E1EDE9800472454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA013B691E1EDE9800472454 /* Main.storyboard */; };
 		EA013B761E1EDE9800472454 /* KKWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA013B751E1EDE9800472454 /* KKWordsTests.swift */; };
 		EA013B811E1EDE9800472454 /* KKWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA013B801E1EDE9800472454 /* KKWordsUITests.swift */; };
+		EA30D8B61E22A1480003B705 /* KKWordFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30D8B51E22A1480003B705 /* KKWordFile.swift */; };
+		EA30D8BB1E22A2AA0003B705 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA30D8B91E22A2AA0003B705 /* CHCSVParser.m */; };
+		EA30D8BE1E22A6CD0003B705 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30D8BD1E22A6CD0003B705 /* CSV.swift */; };
+		EA30D8C01E22FE700003B705 /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30D8BF1E22FE700003B705 /* PreferenceView.swift */; };
+		EA3C6C711E20469500838950 /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6C701E20469500838950 /* AppMenu.swift */; };
+		EA439DF21E217B3300FF6EA3 /* SwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA439DF11E217B3300FF6EA3 /* SwiftTimer.swift */; };
+		EA8218081E1EE21A0026127D /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8218071E1EE21A0026127D /* WindowController.swift */; };
+		EA82180E1E1EEF990026127D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82180D1E1EEF990026127D /* QuizViewController.swift */; };
+		EA8218211E1F6CDD0026127D /* KKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8218201E1F6CDD0026127D /* KKUtils.swift */; };
+		EABCD0381E20753E00330648 /* KKWords.storedata in Resources */ = {isa = PBXBuildFile; fileRef = EABCD0331E20753E00330648 /* KKWords.storedata */; };
+		EABCD0411E20776200330648 /* WordInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCD03D1E20776200330648 /* WordInfo+CoreDataClass.swift */; };
+		EABCD0421E20776200330648 /* WordInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCD03E1E20776200330648 /* WordInfo+CoreDataProperties.swift */; };
+		EABCD0431E20776200330648 /* WordList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCD03F1E20776200330648 /* WordList+CoreDataClass.swift */; };
+		EABCD0441E20776200330648 /* WordList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCD0401E20776200330648 /* WordList+CoreDataProperties.swift */; };
+		EABCD0461E20904900330648 /* KKPronounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCD0451E20904900330648 /* KKPronounce.swift */; };
+		EABCD0481E215FED00330648 /* WarningBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCD0471E215FED00330648 /* WarningBadge.swift */; };
+		EAF4256D1E21DF2A00B60F05 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF4256C1E21DF2A00B60F05 /* SQLite.framework */; };
+		EAF4256F1E21DF3000B60F05 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAF4256C1E21DF2A00B60F05 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +51,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EAF425701E21DF3000B60F05 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EAF4256F1E21DF3000B60F05 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EA013B5D1E1EDE9800472454 /* KKWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA013B601E1EDE9800472454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +79,25 @@
 		EA013B7C1E1EDE9800472454 /* KKWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA013B801E1EDE9800472454 /* KKWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKWordsUITests.swift; sourceTree = "<group>"; };
 		EA013B821E1EDE9800472454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA30D8B51E22A1480003B705 /* KKWordFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKWordFile.swift; sourceTree = "<group>"; };
+		EA30D8B81E22A2AA0003B705 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		EA30D8B91E22A2AA0003B705 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		EA30D8BD1E22A6CD0003B705 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		EA30D8BF1E22FE700003B705 /* PreferenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
+		EA3C6C701E20469500838950 /* AppMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		EA439DF11E217B3300FF6EA3 /* SwiftTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTimer.swift; sourceTree = "<group>"; };
+		EA8218071E1EE21A0026127D /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		EA82180D1E1EEF990026127D /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		EA8218201E1F6CDD0026127D /* KKUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKUtils.swift; sourceTree = "<group>"; };
+		EABCD0331E20753E00330648 /* KKWords.storedata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = KKWords.storedata; path = KKWords/Entities/KKWords.storedata; sourceTree = "<group>"; };
+		EABCD03D1E20776200330648 /* WordInfo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WordInfo+CoreDataClass.swift"; path = "KKWords/Entities/WordInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EABCD03E1E20776200330648 /* WordInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WordInfo+CoreDataProperties.swift"; path = "KKWords/Entities/WordInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EABCD03F1E20776200330648 /* WordList+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WordList+CoreDataClass.swift"; path = "KKWords/Entities/WordList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EABCD0401E20776200330648 /* WordList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WordList+CoreDataProperties.swift"; path = "KKWords/Entities/WordList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EABCD0451E20904900330648 /* KKPronounce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKPronounce.swift; sourceTree = "<group>"; };
+		EABCD0471E215FED00330648 /* WarningBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarningBadge.swift; sourceTree = "<group>"; };
+		EAE8BD801E21A817004D93C3 /* KKWords-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKWords-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAF4256C1E21DF2A00B60F05 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF4256D1E21DF2A00B60F05 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +129,13 @@
 		EA013B541E1EDE9800472454 = {
 			isa = PBXGroup;
 			children = (
+				EAF4256C1E21DF2A00B60F05 /* SQLite.framework */,
+				EA30D8B71E22A2AA0003B705 /* CHCSVParser */,
 				EA013B5F1E1EDE9800472454 /* KKWords */,
 				EA013B741E1EDE9800472454 /* KKWordsTests */,
 				EA013B7F1E1EDE9800472454 /* KKWordsUITests */,
 				EA013B5E1E1EDE9800472454 /* Products */,
+				EAE8BDC31E21AFBB004D93C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +152,23 @@
 		EA013B5F1E1EDE9800472454 /* KKWords */ = {
 			isa = PBXGroup;
 			children = (
+				EA8218171E1EF9F20026127D /* Entities */,
+				EAE8BD801E21A817004D93C3 /* KKWords-Bridging-Header.h */,
 				EA013B601E1EDE9800472454 /* AppDelegate.swift */,
 				EA013B621E1EDE9800472454 /* ViewController.swift */,
 				EA013B671E1EDE9800472454 /* Assets.xcassets */,
 				EA013B691E1EDE9800472454 /* Main.storyboard */,
 				EA013B6C1E1EDE9800472454 /* Info.plist */,
 				EA013B641E1EDE9800472454 /* KKWords.xcdatamodeld */,
+				EA8218071E1EE21A0026127D /* WindowController.swift */,
+				EA82180D1E1EEF990026127D /* QuizViewController.swift */,
+				EA8218201E1F6CDD0026127D /* KKUtils.swift */,
+				EABCD0451E20904900330648 /* KKPronounce.swift */,
+				EA3C6C701E20469500838950 /* AppMenu.swift */,
+				EABCD0471E215FED00330648 /* WarningBadge.swift */,
+				EA439DF11E217B3300FF6EA3 /* SwiftTimer.swift */,
+				EA30D8B51E22A1480003B705 /* KKWordFile.swift */,
+				EA30D8BF1E22FE700003B705 /* PreferenceView.swift */,
 			);
 			path = KKWords;
 			sourceTree = "<group>";
@@ -125,6 +191,36 @@
 			path = KKWordsUITests;
 			sourceTree = "<group>";
 		};
+		EA30D8B71E22A2AA0003B705 /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				EA30D8B81E22A2AA0003B705 /* CHCSVParser.h */,
+				EA30D8B91E22A2AA0003B705 /* CHCSVParser.m */,
+				EA30D8BD1E22A6CD0003B705 /* CSV.swift */,
+			);
+			path = CHCSVParser;
+			sourceTree = "<group>";
+		};
+		EA8218171E1EF9F20026127D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EABCD0331E20753E00330648 /* KKWords.storedata */,
+				EABCD03D1E20776200330648 /* WordInfo+CoreDataClass.swift */,
+				EABCD03E1E20776200330648 /* WordInfo+CoreDataProperties.swift */,
+				EABCD03F1E20776200330648 /* WordList+CoreDataClass.swift */,
+				EABCD0401E20776200330648 /* WordList+CoreDataProperties.swift */,
+			);
+			name = Entities;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EAE8BDC31E21AFBB004D93C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +231,7 @@
 				EA013B591E1EDE9800472454 /* Sources */,
 				EA013B5A1E1EDE9800472454 /* Frameworks */,
 				EA013B5B1E1EDE9800472454 /* Resources */,
+				EAF425701E21DF3000B60F05 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +291,7 @@
 					EA013B5C1E1EDE9800472454 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 67UR597WRM;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					EA013B701E1EDE9800472454 = {
@@ -236,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA013B681E1EDE9800472454 /* Assets.xcassets in Resources */,
+				EABCD0381E20753E00330648 /* KKWords.storedata in Resources */,
 				EA013B6B1E1EDE9800472454 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +360,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EABCD0481E215FED00330648 /* WarningBadge.swift in Sources */,
+				EABCD0421E20776200330648 /* WordInfo+CoreDataProperties.swift in Sources */,
 				EA013B631E1EDE9800472454 /* ViewController.swift in Sources */,
+				EA82180E1E1EEF990026127D /* QuizViewController.swift in Sources */,
+				EA30D8C01E22FE700003B705 /* PreferenceView.swift in Sources */,
+				EA8218081E1EE21A0026127D /* WindowController.swift in Sources */,
+				EA439DF21E217B3300FF6EA3 /* SwiftTimer.swift in Sources */,
+				EABCD0411E20776200330648 /* WordInfo+CoreDataClass.swift in Sources */,
+				EABCD0431E20776200330648 /* WordList+CoreDataClass.swift in Sources */,
+				EA8218211E1F6CDD0026127D /* KKUtils.swift in Sources */,
+				EA30D8B61E22A1480003B705 /* KKWordFile.swift in Sources */,
+				EABCD0461E20904900330648 /* KKPronounce.swift in Sources */,
+				EABCD0441E20776200330648 /* WordList+CoreDataProperties.swift in Sources */,
+				EA30D8BB1E22A2AA0003B705 /* CHCSVParser.m in Sources */,
+				EA30D8BE1E22A6CD0003B705 /* CSV.swift in Sources */,
 				EA013B661E1EDE9800472454 /* KKWords.xcdatamodeld in Sources */,
 				EA013B611E1EDE9800472454 /* AppDelegate.swift in Sources */,
+				EA3C6C711E20469500838950 /* AppMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,12 +518,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 67UR597WRM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KKWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/KKWords",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.idickyt.KKWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKWords/KKWords-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -418,12 +546,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 67UR597WRM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KKWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/KKWords",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.idickyt.KKWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKWords/KKWords-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -509,6 +650,7 @@
 				EA013B871E1EDE9800472454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA013B881E1EDE9800472454 /* Build configuration list for PBXNativeTarget "KKWordsTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +659,7 @@
 				EA013B8A1E1EDE9800472454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA013B8B1E1EDE9800472454 /* Build configuration list for PBXNativeTarget "KKWordsUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +668,7 @@
 				EA013B8D1E1EDE9800472454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

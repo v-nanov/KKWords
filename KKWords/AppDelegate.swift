@@ -63,11 +63,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
         
-        // Create the coordinator and store
+        // Copy or create the coordinator and store
         var coordinator: NSPersistentStoreCoordinator? = nil
         if failError == nil {
             coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
+            let defaultURL = Bundle.main.url(forResource: "KKWords", withExtension: "storedata")
             let url = self.applicationDocumentsDirectory.appendingPathComponent("KKWords.storedata")
+            // Check if no data, then copy default db
+            if !FileManager.default.fileExists(atPath: url.path) {
+                do {
+                    try FileManager.default.copyItem(at: defaultURL!, to: url)
+                }
+                catch { }
+            }
             do {
                 try coordinator!.addPersistentStore(ofType: NSXMLStoreType, configurationName: nil, at: url, options: nil)
             } catch {
@@ -166,6 +174,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // If we got here, it is time to quit.
         return .terminateNow
     }
-
+    
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
 }
 
