@@ -31,6 +31,7 @@ class QuizViewController: NSViewController {
     
     @IBOutlet var textMode: NSButton!
     @IBOutlet var audioMode: NSButton!
+    @IBOutlet var shuffleMode: NSButton!
     
     let context = (NSApplication.shared().delegate as! AppDelegate).managedObjectContext
     
@@ -139,7 +140,9 @@ class QuizViewController: NSViewController {
         
         self.chapterGroupLimit = Int(self.allWordList[currentIndex].groupLimit)
         // self.chapterGroupLimit = 50
-        self.currentWords.shuffle()
+        if self.shuffleMode.state == NSOnState {
+            self.currentWords.shuffle()
+        }
         
         // set progress
         self.wordCountProgress.stringValue = "1/\(self.currentWords.count)"
@@ -178,6 +181,7 @@ class QuizViewController: NSViewController {
             self.pronounceButton.isEnabled = true
             self.markCorrectButton.isEnabled = true
             self.toggleStartButton.title = "Stop"
+            self.shuffleMode.isEnabled = false
             self.correctRateIndicator.isHidden = false
             // reset wrong words
             self.wrongWords = []
@@ -199,6 +203,7 @@ class QuizViewController: NSViewController {
         self.wrongCountIndicator.set(0)
         self.englishLabel.stringValue = "KK Words"
         self.chineseLabel.stringValue = "Ready to Start"
+        self.shuffleMode.isEnabled = true
         self.countDownTimer.suspend()
         self.saveWrongWordList()
     }
@@ -268,6 +273,11 @@ class QuizViewController: NSViewController {
         }
         UserDefaults.standard.set(self.audioMode.state == NSOnState ? true : false, forKey: "audio_enabled")
         UserDefaults.standard.set(self.textMode.state == NSOnState ? true : false, forKey: "text_enabled")
+    }
+    
+    @IBAction func setShuffleMode(sender: AnyObject!) {
+        UserDefaults.standard.set(self.shuffleMode.state == NSOnState ? true : false, forKey: "shuffle_enabled")
+        self.loadCurrentWords()
     }
     
     @IBAction func wordListSwitched(sender: NSPopUpButton!) {
@@ -343,14 +353,19 @@ class QuizViewController: NSViewController {
     func loadSettings() {
         UserDefaults.standard.register(defaults: ["audio_enabled": true])
         UserDefaults.standard.register(defaults: ["text_enabled": true])
+        UserDefaults.standard.register(defaults: ["shuffle_enabled": false])
+
         UserDefaults.standard.register(defaults: ["interval_index": 0])
         
         let audioEnabled = UserDefaults.standard.bool(forKey: "audio_enabled")
         let textEnabled = UserDefaults.standard.bool(forKey: "text_enabled")
+        let shuffleEnabled = UserDefaults.standard.bool(forKey: "shuffle_enabled")
+        
         let intervalIndex = UserDefaults.standard.integer(forKey: "interval_index")
         
         self.audioMode.state = audioEnabled ? NSOnState : NSOffState
         self.textMode.state = textEnabled ? NSOnState : NSOffState
+        self.shuffleMode.state = shuffleEnabled ? NSOnState : NSOffState
         self.countDownTimeButton.selectItem(at: intervalIndex)
     }
     

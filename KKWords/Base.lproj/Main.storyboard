@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
@@ -335,16 +336,6 @@
                                     <action selector="textAudioModeCheckWithSender:" target="m9w-Hk-4je" id="171-gg-Eka"/>
                                 </connections>
                             </button>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="h94-OJ-ybw">
-                                <rect key="frame" x="150" y="258" width="57" height="18"/>
-                                <buttonCell key="cell" type="check" title="Audio" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="iTV-Dh-aqK">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="textAudioModeCheckWithSender:" target="m9w-Hk-4je" id="MEr-8J-EBW"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tRn-oq-LcW">
                                 <rect key="frame" x="480" y="-1" width="0.0" height="1"/>
                                 <constraints>
@@ -437,6 +428,26 @@ DQ
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="gwU-qb-5xo">
+                                <rect key="frame" x="141" y="258" width="66" height="18"/>
+                                <buttonCell key="cell" type="check" title="Shuffle" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Enp-pe-Uss">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setShuffleModeWithSender:" target="m9w-Hk-4je" id="sLv-si-Eqa"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="h94-OJ-ybw">
+                                <rect key="frame" x="82" y="258" width="57" height="18"/>
+                                <buttonCell key="cell" type="check" title="Audio" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="iTV-Dh-aqK">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="textAudioModeCheckWithSender:" target="m9w-Hk-4je" id="MEr-8J-EBW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="DWT-PL-V7i" firstAttribute="leading" secondItem="GhH-Lv-3k4" secondAttribute="leading" id="1aV-ar-3vV"/>
@@ -456,13 +467,11 @@ DQ
                             <constraint firstItem="79D-9P-SaK" firstAttribute="centerX" secondItem="9VK-eR-fQi" secondAttribute="centerX" id="KSR-df-iQq"/>
                             <constraint firstItem="MST-bI-wNF" firstAttribute="leading" secondItem="9VK-eR-fQi" secondAttribute="leading" constant="10" id="KhG-rf-XXJ"/>
                             <constraint firstAttribute="trailing" secondItem="bA7-pp-QnS" secondAttribute="trailing" id="N91-fw-co8"/>
-                            <constraint firstItem="h94-OJ-ybw" firstAttribute="trailing" secondItem="GhH-Lv-3k4" secondAttribute="trailing" id="Ni0-Bt-LGv"/>
                             <constraint firstItem="AQw-9S-KKH" firstAttribute="top" secondItem="MST-bI-wNF" secondAttribute="bottom" constant="10" id="QJ8-yG-S8Z"/>
                             <constraint firstItem="ZfQ-cl-6gZ" firstAttribute="centerY" secondItem="heN-oU-0Gv" secondAttribute="centerY" id="RTZ-TM-rOt"/>
                             <constraint firstItem="ZfQ-cl-6gZ" firstAttribute="leading" secondItem="heN-oU-0Gv" secondAttribute="trailing" constant="35" id="UhP-nG-weg"/>
                             <constraint firstItem="8Kp-2t-o5A" firstAttribute="centerX" secondItem="9VK-eR-fQi" secondAttribute="centerX" id="Usc-h8-CyH"/>
                             <constraint firstItem="GhH-Lv-3k4" firstAttribute="top" secondItem="9VK-eR-fQi" secondAttribute="top" constant="20" id="VIW-aI-HPl"/>
-                            <constraint firstItem="h94-OJ-ybw" firstAttribute="top" secondItem="GhH-Lv-3k4" secondAttribute="bottom" constant="20" id="VoL-Za-fAu"/>
                             <constraint firstItem="MoZ-u1-erR" firstAttribute="top" secondItem="bA7-pp-QnS" secondAttribute="bottom" constant="10" id="Yju-Uu-9F5"/>
                             <constraint firstItem="cJC-W9-vFq" firstAttribute="top" secondItem="bA7-pp-QnS" secondAttribute="bottom" constant="10" id="YpI-n7-zA3"/>
                             <constraint firstItem="WFV-EE-6cP" firstAttribute="width" secondItem="jqu-0T-9ii" secondAttribute="width" id="clO-DO-sCV"/>
@@ -476,17 +485,21 @@ DQ
                             <constraint firstItem="BFe-c0-gql" firstAttribute="centerX" secondItem="9VK-eR-fQi" secondAttribute="centerX" id="hgL-oh-aLc"/>
                             <constraint firstItem="bld-DC-wro" firstAttribute="leading" secondItem="9VK-eR-fQi" secondAttribute="leading" id="iRS-Sd-y2c"/>
                             <constraint firstItem="jqu-0T-9ii" firstAttribute="centerY" secondItem="GhH-Lv-3k4" secondAttribute="centerY" id="j4j-KS-Esc"/>
+                            <constraint firstItem="gwU-qb-5xo" firstAttribute="leading" secondItem="h94-OJ-ybw" secondAttribute="trailing" constant="6" id="kMg-Fp-IHH"/>
                             <constraint firstItem="jqu-0T-9ii" firstAttribute="centerX" secondItem="9VK-eR-fQi" secondAttribute="centerX" constant="120" id="l4X-yJ-JV8"/>
                             <constraint firstItem="MST-bI-wNF" firstAttribute="top" secondItem="bA7-pp-QnS" secondAttribute="top" constant="50" id="lFn-fI-9Yu"/>
                             <constraint firstItem="vCk-P0-EzQ" firstAttribute="top" secondItem="bA7-pp-QnS" secondAttribute="bottom" constant="10" id="p1u-a7-03L"/>
                             <constraint firstAttribute="bottom" secondItem="heN-oU-0Gv" secondAttribute="bottom" constant="10" id="qNx-6Z-JDS"/>
                             <constraint firstItem="heN-oU-0Gv" firstAttribute="top" secondItem="79D-9P-SaK" secondAttribute="bottom" constant="5" id="rGx-Z4-jIe"/>
+                            <constraint firstItem="h94-OJ-ybw" firstAttribute="leading" secondItem="DWT-PL-V7i" secondAttribute="trailing" constant="5" id="rae-S1-8Yd"/>
                             <constraint firstItem="heN-oU-0Gv" firstAttribute="leading" secondItem="UhV-5D-NhX" secondAttribute="trailing" constant="35" id="rsg-Cu-HeB"/>
                             <constraint firstItem="bA7-pp-QnS" firstAttribute="leading" secondItem="9VK-eR-fQi" secondAttribute="leading" id="ryc-iu-P1R"/>
                             <constraint firstItem="heN-oU-0Gv" firstAttribute="centerX" secondItem="9VK-eR-fQi" secondAttribute="centerX" id="u2e-Ch-gFu"/>
+                            <constraint firstItem="h94-OJ-ybw" firstAttribute="centerY" secondItem="DWT-PL-V7i" secondAttribute="centerY" id="uNB-8e-DWk"/>
                             <constraint firstAttribute="bottom" secondItem="bld-DC-wro" secondAttribute="bottom" id="vSR-di-JU2"/>
                             <constraint firstItem="AQw-9S-KKH" firstAttribute="width" secondItem="MST-bI-wNF" secondAttribute="width" id="wUg-4l-3xc"/>
                             <constraint firstAttribute="trailing" secondItem="AQw-9S-KKH" secondAttribute="trailing" constant="10" id="xPv-Ya-A35"/>
+                            <constraint firstItem="gwU-qb-5xo" firstAttribute="centerY" secondItem="h94-OJ-ybw" secondAttribute="centerY" id="xlf-0c-PCu"/>
                             <constraint firstItem="jqu-0T-9ii" firstAttribute="width" secondItem="GhH-Lv-3k4" secondAttribute="width" id="yn3-qZ-sw7"/>
                         </constraints>
                     </view>
@@ -501,6 +514,7 @@ DQ
                         <outlet property="markWrongButton" destination="UhV-5D-NhX" id="OmF-bW-xjh"/>
                         <outlet property="progressIndicator" destination="MoZ-u1-erR" id="tan-qg-h3W"/>
                         <outlet property="pronounceButton" destination="heN-oU-0Gv" id="3Q6-8Z-yxi"/>
+                        <outlet property="shuffleMode" destination="gwU-qb-5xo" id="zmh-2O-gbF"/>
                         <outlet property="textMode" destination="DWT-PL-V7i" id="3GY-GB-H7C"/>
                         <outlet property="toggleStartButton" destination="79D-9P-SaK" id="nbk-IP-ZlC"/>
                         <outlet property="wordCountProgress" destination="8Kp-2t-o5A" id="CiU-qh-2td"/>
