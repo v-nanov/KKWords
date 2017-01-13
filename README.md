@@ -15,6 +15,7 @@ Previously named iMaid Words, free software for OneBest Co.Ltd. Guangzhou for te
 ## Changelog
 ### 1.3.7
 1. You can now toggle the shuffle word list mode
+
 ### 1.3.6
 1. Change the deployment target to 10.9, full support of macOS 10.9+, previous was macOS 10.10+
 
