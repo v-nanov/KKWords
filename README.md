@@ -6,11 +6,15 @@ Yet another simple app to do english word quiz.
 Previously named iMaid Words, free software for OneBest Co.Ltd. Guangzhou for teaching purpose, first established in 2013 with Python 2.7, KK Words (Kirino Kousaka Words) is re-written in Swift 3.0, compatible with macOS 10.9+.
 
 ## Releases / Downloads
+[1.3.7](https://github.com/DickyT/KKWords/releases/tag/1.3.7)
+
 [1.3.6](https://github.com/DickyT/KKWords/releases/tag/1.3.6)
 
 [1.3.5](https://github.com/DickyT/KKWords/releases/tag/1.3.5)
 
 ## Changelog
+### 1.3.7
+1. You can now toggle the shuffle word list mode
 ### 1.3.6
 1. Change the deployment target to 10.9, full support of macOS 10.9+, previous was macOS 10.10+
 
