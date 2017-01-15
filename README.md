@@ -12,7 +12,7 @@ Previously named iMaid Words, free software for OneBest Co.Ltd. Guangzhou for te
 
 [1.3.5](https://github.com/DickyT/KKWords/releases/tag/1.3.5)
 
-[1.0.0](https://github.com/DickyT/KKWords/releases/tag/1.0.0) - (Released in 2014)
+[1.0.0](https://github.com/DickyT/KKWords/releases/tag/1.0.0) - (For **macOS 10.8** or earlier)
 
 ## Changelog
 ### 1.3.7
