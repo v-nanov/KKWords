@@ -12,6 +12,8 @@ Previously named iMaid Words, free software for OneBest Co.Ltd. Guangzhou for te
 
 [1.3.5](https://github.com/DickyT/KKWords/releases/tag/1.3.5)
 
+[1.0.0](https://github.com/DickyT/KKWords/releases/tag/1.0.0) - (Released in 2014)
+
 ## Changelog
 ### 1.3.7
 1. You can now toggle the shuffle word list mode
